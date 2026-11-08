@@ -1,0 +1,256 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BMW M4 Competition</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #080b12;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    padding: 25px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #0d1422;
+}
+
+.logo {
+    color: #39aaff;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 25px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #39aaff;
+}
+
+.hero {
+    min-height: 85vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 30px;
+    background:
+    linear-gradient(rgba(0,0,0,.55), rgba(0,0,0,.85)),
+    url('https://images.unsplash.com/photo-1555215695-3004980ad54e?w=1600')
+    center/cover;
+}
+
+.hero h1 {
+    font-size: clamp(45px, 8vw, 90px);
+    color: #42adff;
+    text-shadow: 0 0 25px #007bff;
+}
+
+.hero p {
+    font-size: 20px;
+    margin: 20px;
+}
+
+.btn {
+    padding: 15px 35px;
+    background: #168cff;
+    color: white;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: bold;
+    transition: .3s;
+}
+
+.btn:hover {
+    background: white;
+    color: #168cff;
+    transform: scale(1.05);
+}
+
+section {
+    padding: 80px 10%;
+}
+
+h2 {
+    text-align: center;
+    font-size: 36px;
+    color: #42adff;
+    margin-bottom: 35px;
+}
+
+.about {
+    text-align: center;
+    line-height: 1.8;
+    font-size: 18px;
+    max-width: 850px;
+    margin: auto;
+}
+
+.stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 20px;
+    margin-top: 40px;
+}
+
+.card {
+    background: #111c2d;
+    padding: 30px;
+    text-align: center;
+    border: 1px solid #1d70b8;
+    border-radius: 15px;
+    transition: .3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 25px #087cff55;
+}
+
+.card h3 {
+    color: #42adff;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.gallery img {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+    border-radius: 15px;
+    transition: .3s;
+}
+
+.gallery img:hover {
+    transform: scale(1.04);
+}
+
+footer {
+    text-align: center;
+    padding: 35px;
+    background: #0d1422;
+    color: #aaa;
+}
+
+footer span {
+    color: #42adff;
+    font-weight: bold;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+@media(max-width: 600px) {
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+    nav a {
+        margin: 8px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">BMW M POWER</div>
+    <nav>
+        <a href="#about">О модели</a>
+        <a href="#specs">Характеристики</a>
+        <a href="#gallery">Галерея</a>
+    </nav>
+</header>
+
+<div class="hero">
+    <h1>BMW M4</h1>
+    <p>Скорость. Стиль. Мощь. Настоящая легенда BMW.</p>
+    <a href="#about" class="btn">Узнать больше</a>
+</div>
+
+<section id="about">
+    <h2>О BMW M4 Competition</h2>
+    <div class="about">
+        BMW M4 Competition — спортивное купе немецкого
+        производителя BMW. Эта машина сочетает в себе
+        агрессивный дизайн, невероятную динамику и современные
+        технологии.
+
+        <br><br>
+
+        Под капотом находится мощный двигатель BMW M TwinPower
+        Turbo. Автомобиль создан для тех, кто любит скорость,
+        комфорт и настоящий спортивный характер.
+    </div>
+</section>
+
+<section id="specs">
+    <h2>Характеристики</h2>
+
+    <div class="stats">
+        <div class="card">
+            <h3>510 л.с.</h3>
+            <p>Мощность двигателя</p>
+        </div>
+
+        <div class="card">
+            <h3>3.9 сек</h3>
+            <p>Разгон 0–100 км/ч</p>
+        </div>
+
+        <div class="card">
+            <h3>3.0 L</h3>
+            <p>Объём двигателя</p>
+        </div>
+
+        <div class="card">
+            <h3>AWD</h3>
+            <p>Полный привод в версии xDrive</p>
+        </div>
+    </div>
+</section>
+
+<section id="gallery">
+    <h2>BMW M4 Gallery</h2>
+
+    <div class="gallery">
+        <img src="https://images.unsplash.com/photo-1555215695-3004980ad54e?w=800" alt="BMW">
+        <img src="https://images.unsplash.com/photo-1552519507-da3b142c6e3d?w=800" alt="Спортивный автомобиль">
+        <img src="https://images.unsplash.com/photo-1617531653332-bd46c24f2068?w=800" alt="BMW автомобиль">
+    </div>
+</section>
+
+<footer>
+    <p>BMW M POWER | Made with passion</p>
+    <p>Автор сайта: <span>sigmaubiza</span></p>
+    <p>© 2026 Все права защищены</p>
+</footer>
+
+</body>
+</html>
